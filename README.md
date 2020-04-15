@@ -10,6 +10,7 @@
 此项目基于GNU General Public License v3.0进行授权。详细情况请查阅[LICENSE](https://github.com/IveTian/yingxiaohao/blob/master/LICENSE "LICENSE")。
 ### 作者
 [@木辛恒同学](https://tzih.top/ "@木辛恒同学")
+
 特别感谢[@Rominwolf](https://wsm.ink "@Rominwolf")同学给予我的技术支持！
 ### 关于此作品更多
 请访问[我的博客中关于此项目的记录](https://tzih.top/?p=128 "我的博客中关于此项目的记录")
