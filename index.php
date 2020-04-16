@@ -18,6 +18,14 @@
     <![endif]-->
   </head>
   <body>
+      <script>
+          console.log('%c 欢迎使用营销号文章生成器！', 'color: red;font-size: 24px;font-weight: bold;text-decoration: underline;');
+          console.log('这里为什么会有console.log呢，其实这里就有console.log，和小编一起来看看吧~');
+          console.log('其实啊，其实这就是作者添加的console.log，小编也不知道怎么回事。作者应该是想让摁了F12的同学一起去Github开源地址完善这个项目吧！');
+          console.log('开源地址就在footer~')
+          console.log('作者：木辛恒同学(https://tzih.top)')
+          console.log('协力：Rominwolf(https://wsm.ink)')
+      </script>
     <div class="container">
     <div class="row" style="padding-top:20px;">
         <div class="col-md-1"></div>
@@ -98,7 +106,10 @@
         <div class="col-md-3"></div>
     </div>
   <div style="padding-top:20px; text-align: center;">
-    <footer>前端采用Bootstrap v3框架。作者：<a href="https://tzih.top/">木辛恒同学</a>；协力：<a href="https://wsm.ink/">Rominwolf</a></footer>
+    <footer>前端采用Bootstrap v3框架。作者：<a href="https://tzih.top/">木辛恒同学</a>；协力：<a href="https://wsm.ink/">Rominwolf</a>
+<br />
+<a href="https://github.com/IveTian/yingxiaohao" target="_blank">Github</a>
+</footer>
    </div>
    
 
