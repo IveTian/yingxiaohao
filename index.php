@@ -48,16 +48,17 @@
                     <input type="text" class="form-control" name="mainThing" id="mainThing" placeholder="请输入主体物">
                 </div>
                 <div class="form-group">
-                    <label for="event">事件</label>
-                    <input type="text" class="form-control" name="event" id="event" placeholder="类似于：“混着一起吃”、“重复使用”等等">
+                    <label for="adj">定语</label>
+                    <input type="text" class="form-control" name="adj" id="adj" placeholder="类似于“千万不要”，“绝对不能”...">
                 </div>
                 <div class="form-group">
                     <label for="withWhat">与什么...（第二主体）</label>
                     <input type="text" class="form-control" name="withWhat" id="withWhat" placeholder="类似于：{主体物}不能与{与什么...}{事件}">
                 </div>
                 <div class="form-group">
-                    <label for="adj">定语</label>
-                    <input type="text" class="form-control" name="adj" id="adj" placeholder="类似于“千万不要”，“绝对不能”...">
+                    <label for="event">事件</label>
+                    <input type="text" class="form-control" name="event" id="event" placeholder="类似于：“混着一起吃”、“重复使用”等等">
+
                 </div>
 				<input type="submit" class="btn btn-primary" onClick="window.location.href='index.php'"></button>
             </form>
@@ -108,7 +109,7 @@
   <div style="padding-top:20px; text-align: center;">
     <footer>前端采用Bootstrap v3框架。作者：<a href="https://tzih.top/">木辛恒同学</a>；协力：<a href="https://wsm.ink/">Rominwolf</a>
 <br />
-<a href="https://github.com/IveTian/yingxiaohao" target="_blank">Github</a>
+<a href="https://github.com/IveTian/yingxiaohao" target="_blank">Github</a> <a href="https://api.tzih.top/yxhapi/index.php">使用API</a>
 </footer>
    </div>
    
