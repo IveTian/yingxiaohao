@@ -58,9 +58,12 @@
                 <div class="form-group">
                     <label for="event">事件</label>
                     <input type="text" class="form-control" name="event" id="event" placeholder="类似于：“混着一起吃”、“重复使用”等等">
-
                 </div>
-				<input type="submit" class="btn btn-primary" onClick="window.location.href='index.php'"></button>
+                <div class="form-group">
+                    <label for="source">来源网站</label>
+                    <input type="text" class="form-control" name="source" id="source" placeholder="比如[--前往{source}阅读原文--]，百度APP、今日头条APP...">
+                </div>
+				<input type="submit" class="btn btn-primary" onClick="window.location.href='index.php'">
             </form>
             <?php
             if ($_POST['mood'] == ""){
@@ -78,18 +81,24 @@
                             if ($_POST['adj'] == ""){
                                 echo "<script language='javascript'>;alert('请确认所有输入框不为空！');</script>";
                             }else{
-                                if(isset($_POST['mood'])){
-                                    $mood = $_POST['mood'];
-                                    $mainThing = $_POST['mainThing'];
-                                    $event = $_POST['event'];
-                                    $withWhat = $_POST['withWhat'];
-                                    $adj = $_POST['adj'];
-                                    $contentTitle = $mood . '！' . $mainThing . $adj .  '和' . $withWhat . $event . '！' . "原因竟然是..."; 
-                                    $content = $mainThing . '为什么不能与' . $withWhat . $event . '，' . '这究竟是怎么回事呢？' . $mainThing . '相信大家很熟悉吧，但是不能与' . $withWhat . $event . '是怎么回事呢？下面就让小编带着大家一起去了解吧。\n' . $mainThing . '不能与' . $withWhat . $event . '，其实就是' . $mainThing . '不能与' . $withWhat . $event . '。大家可能会感到很惊讶，' . $mainThing . '为什么' . $adj . '与' . $withWhat . $event . '。\n' . '这些就是' . $mainThing . '为什么' . $adj . '与' . $withWhat . $event . '的全部内容了。大家有什么想法呢，欢迎在评论区里与小编留言互动哦~我们下期再见！';
-                                    //echo $contentTitle . "<br>" . $content;
-                                    echo "<script>window.onload = function(){document.getElementById('resultTitle').value=\"$contentTitle\";document.getElementById('resultContent').value=\"$content\";};</script>";
+                                if ($_POST['source'] == ""){
+                                    echo "<script language='javascript'>;alert('请确认所有输入框不为空！');</script>";
+                                }else{
+                                    if(isset($_POST['mood'])){
+                                        $mood = $_POST['mood'];
+                                        $mainThing = $_POST['mainThing'];
+                                        $event = $_POST['event'];
+                                        $withWhat = $_POST['withWhat'];
+                                        $adj = $_POST['adj'];
+                                        $source = $_POST['source'];
+                                        $sourceContent = '[--前往' . $source . '阅读全文--]';
+                                        $contentTitle = $mood . '！' . $mainThing . $adj .  '和' . $withWhat . $event . '！' . "原因竟然是..."; 
+                                        $content = $mainThing . '为什么不能与' . $withWhat . $event . '，' . '这究竟是怎么回事呢？' . $mainThing . '相信大家很熟悉吧，但是不能与' . $withWhat . $event . '是怎么回事呢？下面就让小编带着大家一起去了解吧。\n' . $mainThing . '不能与' . $withWhat . $event . '，其实就是' . $mainThing . '不能与' . $withWhat . $event . '。大家可能会感到很惊讶，' . $mainThing . '为什么' . $adj . '与' . $withWhat . $event . '。\n' . $sourceContent . '\n' . '这些就是' . $mainThing . '为什么' . $adj . '与' . $withWhat . $event . '的全部内容了。大家有什么想法呢，欢迎在评论区里与小编留言互动哦~我们下期再见！';
+                                        //echo $contentTitle . "<br>" . $content;
+                                        echo "<script>window.onload = function(){document.getElementById('resultTitle').value=\"$contentTitle\";document.getElementById('resultContent').value=\"$content\";};</script>";
+                                    }
                                 }
-                            }
+                           }
                         }
                     }
                 }
@@ -112,12 +121,9 @@
 <a href="https://github.com/IveTian/yingxiaohao" target="_blank">Github</a> <a href="https://api.tzih.top/yxhapi/index.php">使用API</a>
 </footer>
    </div>
-   
-
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    
   </body>
 </html>
